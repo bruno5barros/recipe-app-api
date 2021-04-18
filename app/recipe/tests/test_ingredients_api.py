@@ -75,7 +75,7 @@ class PrivateIngredientsApiTests(TestCase):
 
         self.assertEquals(res.status_code, status.HTTP_400_BAD_REQUEST)
 
-    def  test_retrive_ingredients_assigned_to_recipes(self):
+    def test_retrive_ingredients_assigned_to_recipes(self):
         """Test filtering ingredients by those assigned to recipes"""
         ingredient1 = Ingredient.objects.create(
             user=self.user, name='Apples'
